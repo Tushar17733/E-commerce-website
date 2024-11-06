@@ -1,0 +1,734 @@
+@media (max-width:799px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e3f6;
+        padding: 80px 0 0 10px;
+        transition: 0.4s;
+    }
+
+    .navbar li {
+        margin-bottom: 25px;
+    }
+
+    .mobile {
+        display: flex;
+        gap: 10px;
+        font-size: 33px;
+        align-items: center;
+    }
+
+    #bar {
+        font-size: 33px;
+
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    #close {
+        display: block;
+        color: black;
+        margin-left: 15px;
+        padding-bottom: 30px;
+        font-size: 53px;
+        position: relative;
+        top: -90px;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    .mobile a .material-symbols-outlined {
+        font-size: 32px;
+
+    }
+
+    .section-no-p1 {
+        padding: 0px 80px;
+        margin-top: -40px;
+        margin-bottom: 60px;
+
+    }
+
+    .banner {
+        height: 30vh;
+    }
+
+    .banner-box {
+
+        min-width: 100%;
+        height: 30vh;
+
+
+    }
+
+    .sm-banner {
+        padding: 40px 30px;
+        gap: 20px;
+    }
+
+    .banner3 {
+
+        padding: 40px 30px;
+    }
+
+    .banner3 .banner-box {
+
+        min-width: 20%;
+        height: 30vh;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .banner-box1 {
+        position: relative;
+        left: 200px;
+    }
+
+    .form input {
+        width: 441px;
+    }
+
+    .pro {
+        min-width: 290px;
+    }
+
+    .product1 {
+        padding: 40px 70px;
+    }
+
+    #bar {
+        font-size: 48px;
+    }
+
+    .navbar li a {
+        font-size: 26px;
+    }
+
+    .close {
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .prodetails {
+        padding: 70px 0px;
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    #main-img {
+        width: 60%;
+
+    }
+
+    .proimage {
+        text-align: center;
+    }
+    .proimage {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .smallimages {
+        width: 111px;
+        gap: 6px;
+        margin-left: 153px;
+    }
+    .single-prodetails select {
+       
+        margin-bottom: 10px;
+        margin: auto;
+        margin-bottom: 12px;
+    }
+    .single-prodetails h4 {
+        padding: 30px 0 20px 0;
+    }
+    .single-prodetails h6 {
+    font-size: 17px;
+    }
+    .single-prodetails h2 {
+        font-size: 40px;
+        }
+    #description {
+        width: 85%;
+        margin: auto;
+    }
+    .about-head {
+        padding: 20px 20px;
+    }
+    .about-head img {
+        
+        position: relative;
+        top: -108px;
+    }
+    .about-head div {
+        width: 49%;
+        position: relative;
+        top: -83px;
+    }
+    .about-us-description h2{
+        font-size: 30px;
+    }
+    .about-us-description p{
+        font-size: 15px;
+    }
+    .about-app{
+        padding: 0 40px 75px 40px;
+    }
+    .about-app h1{
+        font-size: 34px;
+    }
+    .video {
+        width: 90%;
+    }
+    .page-header {
+        
+        height: 40vh;
+       
+    }
+    .contact-details {
+       padding: 20px 34px;
+    }
+    .form-details {
+        padding: 52px 34px;
+        gap: 70px;
+        margin-top: 115px;
+    }
+    .form-details form {
+        width: 50%;
+        
+    }
+    .cart-add {
+       padding: 86px 20px;
+    }
+    .footernew{
+        display: flex;
+    }
+    .uppercol{
+        width: 100%;
+    }
+    .blog {
+        padding: 67px 70px 0 70px;
+    }
+    .cart {
+        padding-left: 10px;
+    }
+
+}
+
+@media (max-width:477px) {
+    .hero-image {
+        width: 73%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 100px;
+        margin-top: 80px;
+        width: 121%;
+    }
+
+    .section-no-p1 {
+        padding: 0px 38px;
+
+    }
+
+    #mq1 {
+        position: relative;
+        left: 95px;
+        font-size: 37px;
+    }
+
+    #mq2 {
+        font-size: 24px;
+        position: relative;
+        left: 89px;
+    }
+
+    .pro-container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pro {
+        min-width: 356px;
+        position: relative;
+        left: 73px;
+    }
+
+    .banner {
+        height: 40vh;
+        width: 170%;
+    }
+
+    .banner-box {
+        min-width: 185%;
+        height: 44vh;
+    }
+
+    .banner-box1 {
+        position: relative;
+        left: 0px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .navbar.active {
+        z-index: 99;
+    }
+
+    .banner3 .banner-box3 {
+        width: 500px;
+    }
+
+    .newsletter {
+        width: 170%;
+    }
+
+    .form input {
+        width: 312px;
+    }
+
+    footer.section-p1 {
+        padding: 40px 27px;
+    }
+
+    .close {
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .hero-image {
+
+        right: -38px;
+    }
+
+    .hero1 {
+
+        left: 49px;
+    }
+
+    .fe-box {
+        width: 194px;
+
+    }
+
+   
+
+    .mobile {
+        position: relative;
+        right: -47px;
+    }
+    .blog{
+        padding: 100px 20px 0 20px;
+
+    }
+    .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .newhero {
+        width: 170%;
+    }
+    .blog-img img {
+        width: 342%;
+        height: 368px;
+        padding-left: 31px;
+    }
+    .blog-box h1 {
+        position: absolute;
+        top: -53px;
+        left: 52px;
+        font-size: 75px;
+        font-weight: 700;
+        color: #c9cbce;
+    }
+    .blog-details {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-details p{
+       text-align: center;
+       padding-left: 50px;
+    }
+    .blog-details h4{
+        padding-left: 35px;
+     }
+     .about-head {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 78px;
+        width: 155%;
+    }
+    
+    .about-head img {
+        width: 90%;
+        
+    }
+    .about-head div {
+        width: 88%;
+       
+    }
+    .about-us-description p {
+        font-size: 21px;
+    }
+    .newtag {
+        margin-top: 24px;
+        width: 100%;
+        height: 29px;
+        font-size: 22px;
+    }
+    .about-app {
+        width: 155%;
+    }
+    .form-details {
+        gap: 12px;
+    }
+    .page-header {
+        height: 40vh;
+    }
+    .contact-details {
+        padding: 20px 20px;
+        width: 155%;
+    }
+    .form-details {
+        
+        width: 155%;
+    }
+    
+    .newsletter {
+        width: 170%;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .product1 {
+        padding: 40px 70px;
+        margin-left: 141px;
+    }
+    #mq1 {
+        position: relative;
+        left: -12px;
+        font-size: 37px;
+        width: 335px;
+    }
+    #mq2 {
+        font-size: 24px;
+        position: relative;
+        left: 43px;
+        width: 229px;
+    }
+    .banner-box {
+        min-width: 183%;
+        height: 48vh;
+    }
+    .pagination {
+        text-align: center;
+        margin-left: 81px;
+        width: 514px;
+    }
+    .proimage {
+        width: 170%;
+        padding-top: 30px;
+    }
+    #main-img {
+        width: 79%;
+    }
+    .smallimages {
+        width: 137px;
+        gap: 6px;
+        margin-left: 79px;
+    }
+    .single-prodetails {
+        width: 170%;
+    }
+    .blog {
+        width: 119%;
+    }
+    .about-head {
+        width: 170%;
+    }
+    .about-app {
+        width: 170%;
+    }
+    .row {
+        width: 420px;
+    }
+    .contact-details {
+        padding: 20px 20px;
+        width: 170%;
+    }
+    .form-details {
+        width: 160%;
+    }
+    .cart {
+        padding-left: 10px;
+        width: 160%;
+    }
+    .cart-add {
+        padding: 86px 20px;
+        width: 170%;
+    }
+
+
+
+}
+
+@media (max-width:425px) {
+    .mobile {
+        position: relative;
+        right: -47px;
+    }
+
+    .feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 115px;
+        margin-top: 0px;
+        width: 127%;
+    }
+
+    .newhero {
+        height: 400px;
+        width: 155%;
+    }
+
+    #mq1 {
+        left: -46px;
+        width: 414px;
+    }
+
+    #mq2 {
+        left: 51px;
+    }
+
+    .pro {
+
+        left: 103px;
+    }
+
+    .newsletter {
+        width: 155%;
+    }
+
+    .banner {
+        width: 187%;
+    }
+
+    .banner-box {
+        min-width: 205%;
+        height: 54vh;
+    }
+
+    .row {
+        width: 400px;
+    }
+
+    .navbar.active {
+        z-index: 99;
+    }
+
+    .close {
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .form input {
+        width: 256px;
+    }
+
+    .navbar.active {
+        height: 80%;
+        width: 58%;
+    }
+
+    .pagination {
+        text-align: center;
+        width: 140%;
+    }
+    #main-img {
+        width: 136%;
+        margin-left: 46px;
+        padding-top: 21px;
+    }
+    .smallimages {
+        width: 139px;
+        gap: 6px;
+        margin-left: 47px;
+    }
+    .single-prodetails {
+        padding-top: 80px;
+        width: 154%;
+    }
+    .page-header {
+        height: 40vh;
+    }
+    .contact-details {
+        padding: 20px 20px;
+        width: 187%;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .form-details {
+        
+        width: 176%;
+        flex-direction: column;
+    }
+    .form-details form {
+        width: 100%;
+    }
+    .form-details form input, textarea {
+
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .people div p {
+        margin: 0;
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .people div img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        margin-right: 43px;
+    }
+    .people{
+        padding-top: 70px;
+    }
+    .newhero {
+        width: 187%;
+    }
+    .newsletter {
+        width: 187%;
+    }
+    .details{
+        width: 96%;
+        line-height: 80px;
+        padding-bottom: 52px;
+    }
+    .details span,.form-details form span{
+        font-size: 21px;
+     } 
+     .details h2,.form-details form h2{
+         font-size: 40px;
+         
+     }
+     .details h3{
+         font-size: 31px;
+     }
+     .details li{
+         list-style: none;
+        display: flex;
+        padding: 10px 0;
+     }
+     .details li span{
+        font-size: 42px;
+        padding-right: 22px;
+        line-height: 74px;
+     }
+     .details li p{
+        margin: 0;
+        font-size: 30px;
+        line-height: 70px;
+     }
+     .details span, .form-details form span {
+        font-size: 28px;
+    }
+    .map {
+        width: 94%;
+        height: 552px;
+    }
+    .map iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .cart {
+        width: 176%;
+        padding: 40px 25px;
+    }
+
+    .cart-add {
+        padding: 86px 68px;
+        width: 155%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer.section-p1 {
+        padding: 40px 27px;
+        width: 122%;
+    }
+    .subtotal {
+        width: 100%;
+        
+    }
+    .coupon {
+        width: 100%;
+        
+    }
+    #main-img {
+        width: 96%;
+        margin-left: 46px;
+        padding-top: 21px;
+    }
+    .smallimages {
+        width: 155px;
+        
+    }
+    .single-prodetails {
+        width: 187%;
+    }
+    .about-head {
+        width: 187%;
+    }
+    .about-app {
+        width: 187%;
+    }
+    .cart-add {
+        padding: 86px 68px;
+        width: 187%;
+       
+    }
+
+
+}
+@media (max-width:401px){
+    .smallimages {
+        width: 128px;
+        gap: 6px;
+        margin-left: 47px;
+    }
+    
+
+}
