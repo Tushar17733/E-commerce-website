@@ -123,7 +123,7 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td class="cart-total-price"><strong>$335</strong></td>
+                    <td ><strong class="cart-total-price cart-subtotal">$335</strong></td>
                 </tr>
             </table>
             <button class="normal">Proceed to checkout</button>
@@ -200,6 +200,48 @@
         const bar = document.querySelector('#bar');
         const nav = document.querySelector('.navbar');
         const close = document.querySelector('#close');
+        function loadCart() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartItemsContainer = document.querySelector('.cartItems');
+        cartItemsContainer.innerHTML = '';
+
+        let totalPrice = 0;
+
+        cart.forEach((item, index) => {
+            totalPrice += item.subtotal;
+
+            const cartRow = document.createElement('tr');
+            cartRow.classList.add('cart-row');
+            cartRow.innerHTML = `
+                <td><button onclick="removeFromCart(${index})" class="remove-btn">X</button></td>
+                <td><img src="img/products/f1.jpg" alt=""></td>
+                <td>${item.name} (Size: ${item.size})</td>
+                <td class="cart-price">$${item.price}</td>
+                <td class="cart-quantity"><input type="number" value="${item.quantity}" min="1" onchange="updateQuantity(${index}, this.value)"></td>
+                <td class="cart-subtotal">$${item.subtotal}</td>
+            `;
+            cartItemsContainer.appendChild(cartRow);
+        });
+
+        document.querySelector('.cart-total-price').innerText = `$${totalPrice.toFixed(2)}`;
+    }
+
+    function removeFromCart(index) {
+        let cart = JSON.parse(localStorage.getItem('cart'));
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    function updateQuantity(index, newQuantity) {
+        let cart = JSON.parse(localStorage.getItem('cart'));
+        cart[index].quantity = parseInt(newQuantity);
+        cart[index].subtotal = cart[index].price * cart[index].quantity;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCart();
+    }
+
+    document.addEventListener('DOMContentLoaded', loadCart);
 
 
         if (bar) {

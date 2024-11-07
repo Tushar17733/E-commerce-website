@@ -216,24 +216,36 @@
 
 
     <script>
-        const bar = document.querySelector('#bar');
-        const nav = document.querySelector('.navbar');
-        const close = document.querySelector('#close');
+        function addToCart(name, price) {
+        const quantity = document.getElementById('quantity').value;
+        const size = document.getElementById('size').value;
 
-
-        if (bar) {
-            bar.addEventListener('click', () => {
-                nav.classList.add('active');
-            }
-            )
+        if (size === "Select Size") {
+            alert("Please select a size.");
+            return;
         }
 
-        if (close) {
-            close.addEventListener('click', () => {
-                nav.classList.remove('active');
-            }
-            )
-        }
+        // Create an item object
+        const cartItem = {
+            name: name,
+            price: price,
+            quantity: parseInt(quantity),
+            size: size,
+            subtotal: price * quantity
+        };
+
+        // Get current cart from local storage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add item to cart
+        cart.push(cartItem);
+
+        // Save updated cart to local storage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        alert("Item added to cart!");
+    }
+        
 
         var main = document.querySelector('#main-img')
         var small = document.querySelectorAll('.small-img')
